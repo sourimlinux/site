@@ -236,7 +236,7 @@ body {
     margin-top: 5px;
 }
 
-.newsblock .content .container p {
+.newsblock .content .container p.date {
     color: gray;
 }
 
@@ -327,10 +327,83 @@ body.mobile .block3 .block .container {
     flex-direction: column-reverse;
 }
 
+body.mobile .block3 .block .container .content {
+    text-align: center;
+}
+
 body.mobile .block3 .block .box {
     grid-template-columns: 1fr;
 }
 
 body.mobile .block3 .block .container .content:nth-child(2), .block3 .block .container .content:nth-child(1) {
     margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #858585 #ffffff;
+    }
+    *::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    *::-webkit-scrollbar-track {
+      background: #ffffff;
+    }
+
+    *::-webkit-scrollbar-thumb {
+      background-color: #858585;
+      border-radius: 10px;
+      border: 3px solid #ffffff;
+    }    
+
+    .block1, .block4 {
+        background-image: url(https://my-wallpapers.github.io/my-wallpapers/Leaf.jpg);
+    }
+    body {
+        background-color: rgb(245, 245, 245);
+        color: black;
+    }
+    .block1 .content, .block4 .content {
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    .navbar {
+        border-bottom: 1px solid rgb(180, 180, 180);
+        background-color: rgb(255, 255, 255);
+        box-shadow: none;
+    }
+    .navbar .container a {
+        color: black;
+    }
+    .navbar .container a:hover, .navbar #expandbutton a:hover {
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+    }
+    .block3 .box .container{
+        border-color: #adadad;
+    }
+    .block3 .box a {
+        color: rgb(0, 0, 0);
+    }
+    .block3 .box a:hover {
+        color: rgb(46, 46, 46);
+    }
+    .block4 .block a {
+        background-color: white;
+        color: black;
+    } 
+    .block4 .block a:hover {
+        background-color: rgb(224, 224, 224);
+    } 
+    .unavailable {
+        color: #797979 !important;
+        background-color: #a8a8a8 !important;
+    }
+    
+    body.mobile #expandbutton:hover .mobilenavbar .container:hover {
+        background-color: white;
+        text-decoration: underline;
+    }
 }
