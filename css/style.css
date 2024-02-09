@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0f0f0f;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #323232;
+    border-radius: 10px;
+    border: 4px solid #0f0f0f;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scrollbar-width: auto;
+    scrollbar-color: #323232 #0f0f0f;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: 300;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(70, 70, 70);
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .container {
+    padding: 5px 20px 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .container a:hover {
+    color: rgb(200, 200, 200);
+}
+
+.navbar #expandbutton a:hover {
+    color: white;
+}
+
+.navbar #expandbutton a {
+    font-family: 'Istok Web', sans-serif;
+    padding: 6px 5px 5px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .container:nth-child(1) a img{
+    margin-right: 10px;
+}
+
+.logo {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 300;
+}
+
+.navbar .container a.active {
+    color: rgb(100, 100, 100);
+}
+
+.block1 {
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100% - 52px);
+}
+
+.block1 .content {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.4);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.block1 .content div.img {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+
+.block1 .content div.text {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-top: 35px;
+    text-align: center;
+}
+
+
+.block2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.block2 .content h1 {
+    margin-bottom: 5px;
+}
+
+.block2 .content p {
+    margin-top: 5px;
+}
+
+.block3 {
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block3 .box a {
+    color: rgb(0, 255, 0);
+}
+
+.block3 .box a:hover {
+    color: rgb(0, 180, 0);
+}
+
+
+.block3 h1 {
+    margin-bottom: 15px;
+}
+
+.block3 .block {
+    display: block;
+}
+
+.block3 .block .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.block3 .block .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(30, 30, 30);
+    margin: 20px;
+}
+
+.block3 .block .container .content {
+    text-align: left;
+    padding: 5px;
+}
+
+.block3 .block .container .content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.block3 .block .container .content:nth-child(1){
+    margin-right: 20px;
+}
+
+.block3 .block .container .content:nth-child(2){
+    margin-left: 20px;
+}
+
+.newsblock {
+    width: 100%;
+}
+
+.newsblock h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.newsblock .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.newsblock .content .container {
+    display: block;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    min-width: 50%;
+    max-width: 75%;
+    border-radius: 5px;
+    border: 1px solid rgb(30, 30, 30);
+    margin: 20px;
+}
+
+.newsblock .content .container h1 {
+    text-align: start;
+    font-weight: bold;
+    padding: 0 0 5px 0;
+}
+
+.newsblock .content .container h2 {
+    font-weight: 300;
+    padding: 0 0 5px 0;
+}
+
+.newsblock .content .container ul {
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.block4 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.block4 .content {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block4 .block {
+    display: block;
+}
+
+.block4 .block h1 {
+    margin-bottom: 30px;
+}
+
+.block4 .block a {
+    display: block;
+    background-color: #0f0f0f;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 2px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.block4 .block a:hover {
+    background-color: #2f2f2f;
+}
+
+.mobilenavbar {
+    display: none;
+}
+
+.desktopnavbar {
+    display: flex;
+}
+
+.unavailable {
+    color: #2f2f2f !important;
+    background-color: #0f0f0f !important;
+    cursor: default !important;
+}
+
+/* mobile */
+
+body.mobile #expandbutton:hover .mobilenavbar {
+    display: flex !important;
+    flex-direction: column;
+}
+
+body.mobile #expandbutton:hover .mobilenavbar .container:hover {
+    background-color: rgb(35, 35, 35);
+}
+
+
+body.mobile #expandbutton {
+    cursor: default;
+}
+
+body.mobile .desktopnavbar {
+    display: none;
+}
+
+body.mobile .navbar .container {
+    flex-direction: column;
+    user-select: none;
+}
+
+body.mobile .block3 .block .container {
+    flex-direction: column-reverse;
+}
+
+body.mobile .block3 .block .box {
+    grid-template-columns: 1fr;
+}
+
+body.mobile .block3 .block .container .content:nth-child(2), .block3 .block .container .content:nth-child(1) {
+    margin: 0;
+}
