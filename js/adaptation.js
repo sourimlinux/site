@@ -14,7 +14,7 @@ window.onresize = function() {
         if (location[location.length - 2] == "news"){
             document.getElementById('logobutton').setAttribute("href", "../");
         } else {
-            document.getElementById('logobutton').setAttribute("href", "/");
+            document.getElementById('logobutton').setAttribute("href", "./");
         }   
     }
 }
